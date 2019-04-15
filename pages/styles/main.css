@@ -1,23 +1,46 @@
 div#gameZone{
   margin : 0 auto;
-  width : 1100px;
-  height : 600px;
+  width : 1600px;
+  height : 800px;
   margin-top: 50px;
-  border : 5px solid black;
+  border : 3px solid black;
 }
 
-div.mediumPlatform{
-  width : 300px;
-  height : 20px;
-  border: 2px solid red;
-  margin: 0 auto;
 
+
+div.mediumPlatform img{
+  width : 400px;
+  height : 45px;
+}
+
+div.bigPlatform img{
+  width : 1000px;
+
+}
+
+
+div.littlePlatform img{
+  width : 400px;
+  height : 40px;
 }
 
 div.littlePlatform{
-  width : 150px;
-  height : 20px;
-  border: 2px solid red;
+  width : 400px;
+  height : 30px;
+  display:inline-block;
+  margin: 270px 175px 100px 200px
+}
 
+div.mediumPlatform{
+  width : 400px;
+  height : 45px;
+  margin-left: 590px;
+  margin-top: 50px;
+}
 
+div.bigPlatform{
+  width : 1000px;
+  height : 102px;
+  margin : 0 auto;
+  margin-top: 130px;
 }
