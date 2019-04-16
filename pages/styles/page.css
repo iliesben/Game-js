@@ -1,0 +1,103 @@
+@font-face {
+font-family: 'game of thrones';
+src: url('../fonts/gameofthrones.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'minecraft';
+src: url('../fonts/minecraft.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+body{
+  font-family: "SF Pro Text","Arial", sans-serif;
+  overflow: hidden;
+}
+
+header nav{
+  font-family: "game of thrones";
+  font-size: 11px;
+  display: flex;
+}
+
+.container{
+  width: 1075px;
+  margin: 0 auto;
+}
+
+
+.category{
+  flex-wrap: wrap;
+  color: rgb(228, 228, 228);
+  margin: 1px 15px;
+  padding: 15px 10px;
+}
+
+a{
+  text-decoration: none;
+}
+
+nav{
+  position: relative;
+}
+
+nav a:hover{
+  color: #c0392b;
+}
+
+.menu{
+display: flex;
+flex-wrap: wrap;
+}
+/*
+.hero{
+  display: flex;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url();
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}*/
+.mainlogo{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -11px;
+}
+.logo{
+
+}
+
+.hero-inner .button{
+  color: #FFF;
+  background-color: #000;
+  font-size: 30px;
+  padding: 5px 30px;
+  border-radius: 3px;
+  font-family: "game of thrones";
+  margin-top: 50px;
+}
+
+.hero-inner .button:hover{
+  color: #c0392b;
+}
+
+.pages{
+  margin-top: 15px;
+  margin-left: 180px;
+}
+
+.hero-inner{
+  text-align: center;
+  margin-top: 350px;
+}
+
+.arrow{
+  transform: rotate(90deg);
+  font-size: 40px;
+}
