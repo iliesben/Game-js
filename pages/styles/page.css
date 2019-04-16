@@ -100,9 +100,6 @@ flex-wrap: wrap;
   flex-wrap: wrap;
   margin-top: -11px;
 }
-.logo{
-
-}
 
 .hero-inner .button{
   color: #FFF;
@@ -135,15 +132,19 @@ flex-wrap: wrap;
   color: #FFF;
   display: flex;
   width: 100%;
+  flex-direction: column;
 }
 
 
 .parts h3{
   font-family: "game of thrones", serif;
-  padding-top: 50px;
   padding-left: 20px;
   margin-left: 100px;
   padding-bottom: 30px;
+}
+
+#synopsis h3{
+  padding-top: 50px;
 }
 
 .content{
@@ -165,4 +166,45 @@ flex-wrap: wrap;
   width: auto;
   margin-top: -50px;
   margin-left: -75px;
+}
+
+#characters{
+  flex-flow: column wrap;
+}
+
+.charaLine{
+  flex-flow: column wrap;
+}
+
+.chara{
+  display: flex;
+  flex-flow: row nowrap;
+  margin-left: 180px;
+  padding-top: 20px;
+}
+.charaText h4{
+  font-family: 'lato black';
+}
+
+.charaText h5{
+  font-family: 'lato semibold';
+  width: 100px;
+}
+
+.chara p{
+  width: 575px;
+}
+
+.name{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.charaPics{
+  height: 150px;
+  padding-right: 20px;
+}
+
+.daenerys p{
+  margin-left: 170px;
 }
