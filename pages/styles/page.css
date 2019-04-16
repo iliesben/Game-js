@@ -13,22 +13,22 @@ font-style: normal;
 }
 
 @font-face {
-font-family: 'lato thin';
+font-family: 'lato';
 src: url('../fonts/Lato-Thin.ttf') format('truetype');
 font-weight: normal;
 font-style: normal;
 }
 
 @font-face {
-font-family: 'lato black';
-src: url('../fonts/Lato-Black.ttf') format('truetype');
-font-weight: normal;
+font-family: 'lato';
+src: url('../fonts/Lato-Bold.ttf') format('truetype');
+font-weight: bold;
 font-style: normal;
 }
 
 @font-face {
-font-family: 'lato bold';
-src: url('../fonts/Lato-Bold.ttf') format('truetype');
+font-family: 'lato black';
+src: url('../fonts/Lato-Black.ttf') format('truetype');
 font-weight: normal;
 font-style: normal;
 }
@@ -101,7 +101,7 @@ flex-wrap: wrap;
   margin-top: -11px;
 }
 
-.hero-inner .button{
+.button{
   color: #FFF;
   background-color: #000;
   font-size: 30px;
@@ -111,7 +111,7 @@ flex-wrap: wrap;
   margin-top: 50px;
 }
 
-.hero-inner .button:hover{
+.button:hover{
   color: #c0392b;
 }
 
@@ -143,7 +143,7 @@ flex-wrap: wrap;
   padding-bottom: 30px;
 }
 
-#synopsis h3{
+#synopsis h3, #command h3{
   padding-top: 50px;
 }
 
@@ -154,11 +154,11 @@ flex-wrap: wrap;
 }
 
 .content p{
-  font-family: 'lato thin';
+  font-family: 'lato';
+  font-weight: normal;
   width: 400px;
   margin-left: 200px;
   line-height: 1.6;
-
 }
 
 .content .map{
@@ -182,11 +182,11 @@ flex-wrap: wrap;
   margin-left: 180px;
   padding-top: 20px;
 }
-.charaText h4{
+main .charaText h4{
   font-family: 'lato black';
 }
 
-.charaText h5{
+main .charaText h5{
   font-family: 'lato semibold';
   width: 100px;
 }
@@ -207,4 +207,46 @@ flex-wrap: wrap;
 
 .daenerys p{
   margin-left: 170px;
+}
+
+footer{
+  background-color: #000;
+  display: flex;
+  text-align: center;
+
+}
+
+.greenButton{
+  color: #3EB81A;
+  font-weight: bold;
+}
+
+.redButton{
+  color: #FF0000;
+  font-weight: bold;
+}
+
+.keyboardCommand{
+  display: flex;
+  justify-content: space-around;
+}
+
+.inLine{
+  flex-flow: row nowrap;
+}
+
+.icon{
+  width: 30px;
+}
+
+.copyright p{
+  font-size: 11px;
+}
+
+footer .button{
+  color: #c0392b;
+}
+
+footer .button:hover{
+  color: #FFF;
 }
