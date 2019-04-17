@@ -6,134 +6,138 @@
     <link rel="stylesheet" type="text/css" media="screen" href="styles/page.css"/>
   </head>
   <body>
-    <header>
-      <section class="hero">
-        <nav>
-          <div class="container">
-            <div class="menu">
-              <a href="#" class="category" title="accueil">
-              <div class="mainlogo">
-                <img class="logo" src="./images/logo.png" alt="Logo GOT" width="52" height="47">
-                <p class="logo">Game of pixels</p>
+    <div class="page">
+      <header>
+        <section class="hero">
+          <nav>
+            <div class="container">
+              <div class="flex">
+                <a href="#" class="category" title="accueil">
+                <div class="mainlogo flex">
+                  <img class="logo" src="./images/logo.png" alt="Logo GOT" width="52" height="47">
+                  <p class="logo">Game of pixels</p>
+                </div>
+              <div class="pages">
+                </a>
+                <a class="category" href="#synopsis" title="synopsis">Synopsis</a>
+                <a class="category" href="#characters">Les personnages</a>
+                <a class="category" href="#command">Les commandes</a>
+                <a class="category" href="#about">A propos</a>
               </div>
-            <div class="pages">
-              </a>
-              <a class="category" href="#synopsis" title="synopsis">Synopsis</a>
-              <a class="category" href="#characters">Les personnages</a>
-              <a class="category" href="#command">Les commandes</a>
-              <a class="category" href="#about">A propos</a>
-            </div>
+             </div>
            </div>
-         </div>
-        </nav>
-        <div class="hero-inner">
-          <a href="game.html" class="button">Jouer</a>
-        </div>
-    </section>
-    </header>
-    <main>
-      <section class="parts">
-        <div id="synopsis">
-          <h3 class="container">Synopsis</h3>
-          <div class="content">
-            <div class="paragraphs">
-              <p>
-                Bienvenue dans Game Of Pixels. Plongez dans l’univers de Game Of Thrones en représentant la maison de votre choix par le biais de son personnage iconique. Pendant 7 saisons les protagonistes se sont affrontés dans des batailles épiques. A l'aube de la saison 8, il est temps pour Cersei Lannister, Daenerys Targaryen  et Jon Snow de régler leur comptes au grand jour dans une arène !
-              </p>
-              <p>
-                Votre mission ? Eliminer le représentant de la maison adverse. Pour cela, vous allez devoir manier au mieux votre personnage sur les plateformes de l’arène avec pour objectif de toucher votre adversaire avec vos pouvoirs et ce jusqu’à ce qu’il n’ait plus de vie.
-              </p>
-              <p>
-                Mais attention, il vous faudra faire preuve de coordination pour causer des dégâts à l’ennemi tout en restant sur les plateformes pour ne pas tomber de l’arène de combat. Au demeurant, plus la partie avance, moins il y a de plateformes.
-              </p>
-            </div>
-            <img src="images/map.png" alt="map" class="map"/>
+          </nav>
+          <div class="hero-inner">
+            <a href="game.html" class="button">Jouer</a>
           </div>
-        </div>
-        <div id="characters">
-          <h3 class="container">Les personnages</h3>
-          <div class="content charaLine">
-            <div class="jonSnow chara">
-              <div class="name">
-                <img src="images/jonsnow.png" alt="Jon Snow" class="charaPics"/>
-                <div class="charaText">
-                  <h4>Jon Snow</h4>
-                  <h5>Maison Stark</h5>
-                </div>
-              </div>
-              <p>
-                Il est désigné comme étant le fils illégitime de lord Eddard Stark et d'une femme inconnue. Il est doux, qui a hérité du même sens de la justice que son père. Il s'entend bien avec son demi-frère Robb même âge, dont il avoue envier le charisme et la sécurité qui contrastent avec le tempérament introverti de Jon.
-              </p>
-            </div>
-            <div class="daenerys chara">
-              <div class="name">
-                <img src="images/daenerys.png" alt="Daenerys Targaryen" class="charaPics"/>
-                <div class="charaText">
-                  <h4>Daenerys Targaryen</h4>
-                  <h5>Maison Targaryen</h5>
-                </div>
-              </div>
-              <p>
-                C'est la fille de lord Tywin Lannister et la sœur jumelle de Jaime
-Lannister. Selon la légende, cette maison serait elle-même descendante d'une lignée de Dragons. Elle possède un fort caractère, c'est une femme déterminée et confiante.
-              </p>
-            </div>
-            <div class="cersei chara">
-              <div class="name">
-                <img src="images/cersei.png" alt="Cersei Lannister" class="charaPics"/>
-                <div class="charaText">
-                  <h4>Cersei Lannister</h4>
-                  <h5>Maison Lannister</h5>
-                </div>
-              </div>
-              <p>
-                Elle est la fille légitime du roi Aerys II Targaryen et de la reine Rhaella
-Targaryen. Elle est têtue et résistante à la chaleur comme toute sa famille. Elle possède un véritable pouvoir d'adaptation et de fédération.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div id="command">
-          <h3 class="container">Les commandes</h3>
-          <div class="content">
-            <div class="keyboardCommand">
-              <p class="inLine margin">
-                <strong>Joueur 1</strong> <br> Sauter: <span class="greenButton">O</span> <br> Gauche: <span class="greenButton">K</span> <br> Droite: <span class="greenButton">M</span> <br> Attaquer: <span class="redButton">P</span>
-              </p>
-              <img class="inLine" src="images/clavier.png" alt="Clavier joueur 1" class="keyboard" width="150px" height="100px"/>
-              <p class="inLine margin">
-                <strong>Joueur 2</strong> <br> Sauter: <span class="greenButton">Z</span> <br> Gauche: <span class="greenButton">Q</span> <br> Droite: <span class="greenButton">D</span> <br> Attaquer: <span class="redButton">E</span>
-              </p>
-              <img class="inLine margin" src="images/clavier2.png" alt="Clavier joueur 2" class="keyboard" width="150px" height="100px"/>
-            </div>
-          </div>
-        </div>
-        <div id="about">
-          <h3 class="container">A propos de nous</h3>
-          <div class="content chara">
-            <p class="whoAreWe">
-                Nous sommes un groupe de 5 étudiants en première année à l'école HETIC. Nous avons réalisé ce jeu en Avril 2019 dans le cadre d’une semaine intensive autour du JavaScript. A l'occasion de la sortie de la saison 8 de la célèbre série Game of Thrones, nous avons pensé à utiliser cette thématique pour notre jeu. Il s'agit d'un jeu de combat multijoueur pour 2 joueurs 2 sur un même ordinateur.
-            </p>
-          </div>
-        </div>
       </section>
-    </main>
-    <footer class="parts">
-      <div class="play button">
-        <a href="game.html" title="Jouer" class="button">Jouer</a>
+      </header>
+      <div class="parts">
+        <main>
+          <section class="parts">
+            <div id="synopsis">
+              <h3 class="container">Synopsis</h3>
+              <div class="flexRowNowrap">
+                <div class="paragraphs">
+                  <p>
+                    Bienvenue dans Game Of Pixels. Plongez dans l’univers de Game Of Thrones en représentant la maison de votre choix par le biais de son personnage iconique. Pendant 7 saisons les protagonistes se sont affrontés dans des batailles épiques. A l'aube de la saison 8, il est temps pour Cersei Lannister, Daenerys Targaryen  et Jon Snow de régler leur comptes au grand jour dans une arène !
+                  </p>
+                  <p>
+                    Votre mission ? Eliminer le représentant de la maison adverse. Pour cela, vous allez devoir manier au mieux votre personnage sur les plateformes de l’arène avec pour objectif de toucher votre adversaire avec vos pouvoirs et ce jusqu’à ce qu’il n’ait plus de vie.
+                  </p>
+                  <p>
+                    Mais attention, il vous faudra faire preuve de coordination pour causer des dégâts à l’ennemi tout en restant sur les plateformes pour ne pas tomber de l’arène de combat. Au demeurant, plus la partie avance, moins il y a de plateformes.
+                  </p>
+                </div>
+                <img src="images/map.png" alt="map" class="map"/>
+              </div>
+            </div>
+            <div id="characters" class="flexColumnWrap">
+              <h3 class="container">Les personnages</h3>
+              <div class="flexRowNowrap flexColumnWrap">
+                <div class="jonSnow chara flexRowNowrap">
+                  <div class="name">
+                    <img src="images/jonsnow.png" alt="Jon Snow" class="charaPics"/>
+                    <div class="charaText">
+                      <h4>Jon Snow</h4>
+                      <h5>Maison Stark</h5>
+                    </div>
+                  </div>
+                  <p>
+                    Il est désigné comme étant le fils illégitime de lord Eddard Stark et d'une femme inconnue. Il est doux, qui a hérité du même sens de la justice que son père. Il s'entend bien avec son demi-frère Robb même âge, dont il avoue envier le charisme et la sécurité qui contrastent avec le tempérament introverti de Jon.
+                  </p>
+                </div>
+                <div class="daenerys chara flexRowNowrap">
+                  <div class="name">
+                    <img src="images/daenerys.png" alt="Daenerys Targaryen" class="charaPics"/>
+                    <div class="charaText">
+                      <h4>Daenerys Targaryen</h4>
+                      <h5>Maison Targaryen</h5>
+                    </div>
+                  </div>
+                  <p>
+                    C'est la fille de lord Tywin Lannister et la sœur jumelle de Jaime
+    Lannister. Selon la légende, cette maison serait elle-même descendante d'une lignée de Dragons. Elle possède un fort caractère, c'est une femme déterminée et confiante.
+                  </p>
+                </div>
+                <div class="cersei chara flexRowNowrap">
+                  <div class="name">
+                    <img src="images/cersei.png" alt="Cersei Lannister" class="charaPics"/>
+                    <div class="charaText">
+                      <h4>Cersei Lannister</h4>
+                      <h5>Maison Lannister</h5>
+                    </div>
+                  </div>
+                  <p>
+                    Elle est la fille légitime du roi Aerys II Targaryen et de la reine Rhaella
+    Targaryen. Elle est têtue et résistante à la chaleur comme toute sa famille. Elle possède un véritable pouvoir d'adaptation et de fédération.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div id="command">
+              <h3 class="container">Les commandes</h3>
+              <div class="flexRowNowrap">
+                <div class="keyboardCommand">
+                  <p class="inLine margin">
+                    <strong>Joueur 1</strong> <br> Sauter: <span class="greenButton">O</span> <br> Gauche: <span class="greenButton">K</span> <br> Droite: <span class="greenButton">M</span> <br> Attaquer: <span class="redButton">P</span>
+                  </p>
+                  <img class="inLine" src="images/clavier.png" alt="Clavier joueur 1" class="keyboard" width="150px" height="100px"/>
+                  <p class="inLine margin">
+                    <strong>Joueur 2</strong> <br> Sauter: <span class="greenButton">Z</span> <br> Gauche: <span class="greenButton">Q</span> <br> Droite: <span class="greenButton">D</span> <br> Attaquer: <span class="redButton">E</span>
+                  </p>
+                  <img class="inLine margin" src="images/clavier2.png" alt="Clavier joueur 2" class="keyboard" width="150px" height="100px"/>
+                </div>
+              </div>
+            </div>
+            <div id="about" class="parts">
+              <h3 class="container">A propos de nous</h3>
+              <div class="flexRowNowrap chara">
+                <p class="whoAreWe">
+                    Nous sommes un groupe de 5 étudiants en première année à l'école HETIC. Nous avons réalisé ce jeu en Avril 2019 dans le cadre d’une semaine intensive autour du JavaScript. A l'occasion de la sortie de la saison 8 de la célèbre série Game of Thrones, nous avons pensé à utiliser cette thématique pour notre jeu. Il s'agit d'un jeu de combat multijoueur pour 2 joueurs 2 sur un même ordinateur.
+                </p>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer class="parts">
+          <div class="play button">
+            <a href="game.html" title="Jouer" class="button">Jouer</a>
+          </div>
+          <div class="socialNetworks">
+            <h4>Suivez-nous sur les réseaux sociaux</h4>
+            <div class="socialNetworksIcons">
+              <a href="https://www.instagram.com/gameofthrones/?hl=fr" title="instagram"><img src="images/instagram.png" alt="Instagram" class="icon"/></a>
+              <a href="https://fr-fr.facebook.com/GameOfThrones/" title="facebook"><img src="images/facebook.png" alt="Facebook" class="icon"/></a>
+              <a href="https://twitter.com/gameofthrones" title="twitter"><img src="images/twitter.png" alt="Twitter" class="icon"/></a>
+              <a href="https://www.youtube.com/user/GameofThrones/featured" title="youtube"><img src="images/youtube.png" alt="Youtube" class="icon"/></a>
+            </div>
+          </div>
+          <div class="copyright">
+            <p>Copyright © 2019</p>
+          </div>
+        </footer>
       </div>
-      <div class="socialNetworks">
-        <h4>Suivez-nous sur les réseaux sociaux</h4>
-        <div class="socialNetworksIcons">
-          <a href="https://www.instagram.com/gameofthrones/?hl=fr" title="instagram"><img src="images/instagram.png" alt="Instagram" class="icon"/></a>
-          <a href="https://fr-fr.facebook.com/GameOfThrones/" title="facebook"><img src="images/facebook.png" alt="Facebook" class="icon"/></a>
-          <a href="https://twitter.com/gameofthrones" title="twitter"><img src="images/twitter.png" alt="Twitter" class="icon"/></a>
-          <a href="https://www.youtube.com/user/GameofThrones/featured" title="youtube"><img src="images/youtube.png" alt="Youtube" class="icon"/></a>
-        </div>
-      </div>
-      <div class="copyright">
-        <p>Copyright © 2019</p>
-      </div>
-    </footer>
+    </div>
   </body>
 </html>

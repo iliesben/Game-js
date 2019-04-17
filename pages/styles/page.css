@@ -40,12 +40,17 @@ font-weight: normal;
 font-style: normal;
 }
 
-
 body{
   font-family: "SF Pro Text","Arial", sans-serif;
   font-size: 15px;
   margin: 0;
+  overflow-X:hidden;
+}
 
+.page {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 header nav{
@@ -79,7 +84,7 @@ nav a:hover{
   color: #c0392b;
 }
 
-.menu{
+.flex{
 display: flex;
 flex-wrap: wrap;
 }
@@ -96,8 +101,6 @@ flex-wrap: wrap;
   background-attachment: fixed;
 }*/
 .mainlogo{
-  display: flex;
-  flex-wrap: wrap;
   margin-top: -11px;
 }
 
@@ -147,13 +150,12 @@ flex-wrap: wrap;
   padding-top: 50px;
 }
 
-.content{
+.flexRowNowrap{
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
 }
 
-.content p{
+.flexRowNowrap p{
   font-family: 'lato';
   font-weight: normal;
   width: 400px;
@@ -161,24 +163,18 @@ flex-wrap: wrap;
   line-height: 1.6;
 }
 
-.content .map{
+.flexRowNowrap .map{
   height: 600px;
   width: auto;
   margin-top: -50px;
   margin-left: -75px;
 }
 
-#characters{
-  flex-flow: column wrap;
-}
-
-.charaLine{
+.flexColumnWrap{
   flex-flow: column wrap;
 }
 
 .chara{
-  display: flex;
-  flex-flow: row nowrap;
   margin-left: 180px;
   padding-top: 20px;
 }
@@ -213,7 +209,6 @@ footer{
   background-color: #000;
   display: flex;
   text-align: center;
-  margin-top: -100px;
 }
 
 .greenButton{
