@@ -78,7 +78,6 @@ a{
 }
 
 nav{
-  position: relative;
   margin-left: 70px;
 }
 
@@ -261,8 +260,8 @@ footer .button:hover{
 }
 
 #about p{
-  width: 850px;
-  margin-left: 20px;
+  width: 550px;
+  margin-left: 200px;
 }
 
 .copyright{
