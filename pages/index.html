@@ -2,23 +2,24 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8">
-    <title>Game of Thrones</title>
+    <title>Final battle</title>
     <link rel="stylesheet" type="text/css" media="screen" href="styles/page.css"/>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
   </head>
   <body>
     <div class="page">
       <header>
-        <section class="hero">
+        <div class="hero">
           <nav>
             <div class="container">
               <div class="flex">
                 <a href="#" class="category" title="accueil">
-                <div class="mainlogo flex">
-                  <img class="logo" src="./images/logo.png" alt="Logo GOT" width="52" height="47">
-                  <p class="logo">Game of pixels</p>
-                </div>
-              <div class="pages">
+                  <div class="mainlogo flex">
+                    <img class="logo" src="./images/logo.png" alt="Logo GOT" width="52" height="47">
+                    <p class="logo">Final Battle</p>
+                  </div>
                 </a>
+              <div class="pages">
                 <a class="category" href="#synopsis" title="synopsis">Synopsis</a>
                 <a class="category" href="#characters">Les personnages</a>
                 <a class="category" href="#command">Les commandes</a>
@@ -30,17 +31,17 @@
           <div class="hero-inner">
             <a href="game.html" class="button">Jouer</a>
           </div>
-      </section>
+      </div>
       </header>
       <div class="parts">
         <main>
-          <section class="parts">
+          <div class="parts">
             <div id="synopsis">
-              <h3 class="container">Synopsis</h3>
-              <div class="flexRowNowrap">
+              <h3 class="container">Le synopsis</h3>
+              <div class="flexRowNowrap lato">
                 <div class="paragraphs">
                   <p>
-                    Bienvenue dans Game Of Pixels. Plongez dans l’univers de Game Of Thrones en représentant la maison de votre choix par le biais de son personnage iconique. Pendant 7 saisons les protagonistes se sont affrontés dans des batailles épiques. A l'aube de la saison 8, il est temps pour Cersei Lannister, Daenerys Targaryen  et Jon Snow de régler leur comptes au grand jour dans une arène !
+                    Bienvenue dans Final Battle. Plongez dans l’univers de Game Of Thrones en représentant la maison de votre choix par le biais de son personnage iconique. Pendant 7 saisons les protagonistes se sont affrontés dans des batailles épiques. A l'aube de la saison 8, il est temps pour Cersei Lannister, Daenerys Targaryen  et Jon Snow de régler leur comptes au grand jour dans une arène !
                   </p>
                   <p>
                     Votre mission ? Eliminer le représentant de la maison adverse. Pour cela, vous allez devoir manier au mieux votre personnage sur les plateformes de l’arène avec pour objectif de toucher votre adversaire avec vos pouvoirs et ce jusqu’à ce qu’il n’ait plus de vie.
@@ -55,7 +56,7 @@
             <div id="characters" class="flexColumnWrap">
               <h3 class="container">Les personnages</h3>
               <div class="flexRowNowrap flexColumnWrap">
-                <div class="jonSnow chara flexRowNowrap">
+                <div class="jonSnow chara flexRowNowrap lato">
                   <div class="name">
                     <img src="images/jonsnow.png" alt="Jon Snow" class="charaPics"/>
                     <div class="charaText">
@@ -64,10 +65,10 @@
                     </div>
                   </div>
                   <p>
-                    Il est désigné comme étant le fils illégitime de lord Eddard Stark et d'une femme inconnue. Il est doux, qui a hérité du même sens de la justice que son père. Il s'entend bien avec son demi-frère Robb même âge, dont il avoue envier le charisme et la sécurité qui contrastent avec le tempérament introverti de Jon.
+                    Incarnez Jon Snow ! Fils de Lyanna Stark et Rhaegar Targaryen, il représente la maison Stark. Depuis qu'il a appris que Daenerys était en réalité sa nièce et qu'il était légitime au titre de roi, il compte bien se battre contre Daenerys ainsi que Cersei. Avec ses attaques Glaciales, il est un sérieux prétendant au trône de fer.
                   </p>
                 </div>
-                <div class="daenerys chara flexRowNowrap">
+                <div class="daenerys chara flexRowNowrap lato">
                   <div class="name">
                     <img src="images/daenerys.png" alt="Daenerys Targaryen" class="charaPics"/>
                     <div class="charaText">
@@ -80,7 +81,7 @@
     Lannister. Selon la légende, cette maison serait elle-même descendante d'une lignée de Dragons. Elle possède un fort caractère, c'est une femme déterminée et confiante.
                   </p>
                 </div>
-                <div class="cersei chara flexRowNowrap">
+                <div class="chara flexRowNowrap lato">
                   <div class="name">
                     <img src="images/cersei.png" alt="Cersei Lannister" class="charaPics"/>
                     <div class="charaText">
@@ -95,30 +96,31 @@
                 </div>
               </div>
             </div>
-            <div id="command">
+            <div id="command" class="flexColumnWrap">
               <h3 class="container">Les commandes</h3>
-              <div class="flexRowNowrap">
-                <div class="keyboardCommand">
+              <div class="flexRowNowrap lato">
+                <div class="player">
                   <p class="inLine margin">
                     <strong>Joueur 1</strong> <br> Sauter: <span class="greenButton">O</span> <br> Gauche: <span class="greenButton">K</span> <br> Droite: <span class="greenButton">M</span> <br> Attaquer: <span class="redButton">P</span>
                   </p>
-                  <img class="inLine" src="images/clavier.png" alt="Clavier joueur 1" class="keyboard" width="150px" height="100px"/>
+                  <img class="inLine keyboard" src="images/clavier.png" alt="Clavier joueur 1"/>
                   <p class="inLine margin">
                     <strong>Joueur 2</strong> <br> Sauter: <span class="greenButton">Z</span> <br> Gauche: <span class="greenButton">Q</span> <br> Droite: <span class="greenButton">D</span> <br> Attaquer: <span class="redButton">E</span>
                   </p>
-                  <img class="inLine margin" src="images/clavier2.png" alt="Clavier joueur 2" class="keyboard" width="150px" height="100px"/>
+                  <img class="inLine margin keyboard" src="images/clavier2.png" alt="Clavier joueur 2"/>
                 </div>
               </div>
             </div>
             <div id="about" class="parts">
-              <h3 class="container">A propos de nous</h3>
-              <div class="flexRowNowrap chara">
+              <h3 class="container">A propos</h3>
+              <div class="flexRowNowrap chara lato">
                 <p class="whoAreWe">
-                    Nous sommes un groupe de 5 étudiants en première année à l'école HETIC. Nous avons réalisé ce jeu en Avril 2019 dans le cadre d’une semaine intensive autour du JavaScript. A l'occasion de la sortie de la saison 8 de la célèbre série Game of Thrones, nous avons pensé à utiliser cette thématique pour notre jeu. Il s'agit d'un jeu de combat multijoueur pour 2 joueurs 2 sur un même ordinateur.
+                    Nous sommes un groupe de 5 étudiants en première année à l'école HETIC. Nous avons réalisé ce jeu en Avril 2019 dans le cadre d’une semaine intensive autour du JavaScript. A l'occasion de la sortie de la saison 8 de la célèbre série Game of Thrones, nous avons pensé à utiliser cette thématique pour notre jeu. Il s'agit d'un jeu de combat multijoueur en versus sur un même ordinateur. Bon jeu et que le meilleur gagne !
                 </p>
+                <img src="images/groupe.jpg" alt="Photo de groupe"/>
               </div>
             </div>
-          </section>
+          </div>
         </main>
         <footer class="parts">
           <div class="play button">
