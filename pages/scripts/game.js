@@ -82,7 +82,7 @@ imageLeft.onload = function(){
 context.drawImage(imageLeft, player1.x, player1.y)
 }
 imageLeft.src = player1.directionLeft
-imageLeft.src = `sprites/${player1.dir}JonSnow.png`
+imageLeft.src = `sprites/${player1.dir}left1.png`
 
 controller1 = {
 
@@ -119,7 +119,7 @@ loopPlayer1 = function() {
     context.clearRect(player1.x, player1.y, 100,125)
     player1.y_velocity -= 55;
     context.drawImage(imageLeft, player1.x, player1.y)
-    imageLeft.src = `sprites/${player1.dir}JonSnow.png`
+    imageLeft.src = `sprites/${player1.dir}left1.png`
     player1.jumping = true;
 
   }
@@ -129,7 +129,7 @@ loopPlayer1 = function() {
     player1.x_velocity -= 1.0;
     context.drawImage(imageLeft, player1.x, player1.y)
     player1.dir = "left";
-    imageLeft.src = `sprites/${player1.dir}JonSnow.png`
+    imageLeft.src = `sprites/${player1.dir}left1.png`
   }
 
   if (controller1.right) {
@@ -137,7 +137,7 @@ loopPlayer1 = function() {
     player1.x_velocity += 1.0;
     context.drawImage(imageLeft, player1.x, player1.y)
     player1.dir = "right";
-    imageLeft.src = `sprites/${player1.dir}JonSnow.png`
+    imageLeft.src = `sprites/${player1.dir}left1.png`
   }
   player1.y_velocity += 1.5;// gravity
   player1.x += player1.x_velocity;
@@ -149,7 +149,7 @@ loopPlayer1 = function() {
   player1.x_velocity *= 0.9;// friction
   player1.y_velocity *= 0.9;// friction
   context.drawImage(imageLeft, player1.x, player1.y)
-  imageLeft.src = `sprites/${player1.dir}JonSnow.png`
+  imageLeft.src = `sprites/${player1.dir}left1.png`
 
 
   // if player1 is going off the middlePlatform
@@ -159,7 +159,7 @@ loopPlayer1 = function() {
       player1.y_velocity = 0;
       player1.y = 675
       context.drawImage(imageLeft, player1.x, player1.y)
-      imageLeft.src = `sprites/${player1.dir}JonSnow.png`
+      imageLeft.src = `sprites/${player1.dir}left1.png`
       context.drawImage(imgPlatform, xPlatformMiddle, yPlatformMiddle, wPlatformMiddle, hPlatformMiddle);
     }
 
@@ -171,7 +171,7 @@ loopPlayer1 = function() {
       player1.y_velocity = 0;
       player1.y = 500-125;
       context.drawImage(imageLeft, player1.x, player1.y)
-      imageLeft.src = `sprites/${player1.dir}JonSnow.png`
+      imageLeft.src = `sprites/${player1.dir}left1.png`
       context.drawImage(imgPlatform, xPlatformLeft, yPlatformLeft, wPlatformLeft, hPlatformLeft);
     }
 
@@ -182,7 +182,7 @@ loopPlayer1 = function() {
       player1.y_velocity = 0;
       player1.y = 500-125;
       context.drawImage(imageLeft, player1.x, player1.y)
-      imageLeft.src = `sprites/${player1.dir}JonSnow.png`
+      imageLeft.src = `sprites/${player1.dir}left1.png`
       context.drawImage(imgPlatform, xPlatformRight, yPlatformRight, wPlatformRight, hPlatformRight);
 
     }
