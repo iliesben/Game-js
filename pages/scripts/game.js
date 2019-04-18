@@ -20,13 +20,6 @@ const hPlatformRight = 60
 const hPlatformMiddle = 80
 const bgSong = new Audio('music/bg_sound.mp3')
 
-let ballFired = false;
-let ballFired2 = false;
-let rightBall = 0;
-let leftBall = 0;
-let rightBall2 = 0;
-let leftBall2 = 0
-let imgPlatform = new Image();
 
 document.addEventListener('keydown', function(){
   bgSong.play()
