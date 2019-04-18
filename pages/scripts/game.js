@@ -18,6 +18,7 @@ const wPlatformMiddle = 1000
 const hPlatformLeft = 60
 const hPlatformRight = 60
 const hPlatformMiddle = 80
+const bgSong = new Audio('music/bg_sound.mp3')
 
 let ballFired = false;
 let ballFired2 = false;
@@ -27,7 +28,9 @@ let rightBall2 = 0;
 let leftBall2 = 0
 let imgPlatform = new Image();
 
-
+document.addEventListener('keydown', function(){
+  bgSong.play()
+})
 imgPlatform.onload = function() {
     context.drawImage(imgPlatform, xPlatformLeft, yPlatformLeft, wPlatformLeft, hPlatformLeft);
     context.drawImage(imgPlatform, xPlatformRight, yPlatformRight, wPlatformRight, hPlatformRight);
