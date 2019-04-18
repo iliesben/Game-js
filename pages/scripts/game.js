@@ -40,14 +40,14 @@ imgPlatform.onload = function() {
     context.drawImage(imgPlatform, xPlatformMiddle, yPlatformMiddle, wPlatformMiddle, hPlatformMiddle);
 }
 
-imgPlatform.src = 'tilesets/bigIcePlatform.png'
+imgPlatform.src = 'tilesets/icePlatform.png'
 
 setInterval(  () => {
 let imgPlayer1 = new Image();
 imgPlayer1.onload = function() {
   context.drawImage(imgPlayer1, 20, 20, 63, 58)
 }
-imgPlayer1.src = 'sprites/teteJonSnow.png'
+imgPlayer1.src = 'sprites/head1.png'
 
 let imgPlayer2 = new Image();
 imgPlayer2.onload = function() {
