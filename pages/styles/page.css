@@ -102,6 +102,10 @@ header nav{
   padding: 15px 10px;
 }
 
+.category:hover{
+  color: #c0392b;
+}
+
 .hero{
   width: 100vw;
   height: 100vh;
