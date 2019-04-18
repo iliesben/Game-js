@@ -31,6 +31,16 @@ let imgPlatform = new Image();
 document.addEventListener('keydown', function(){
   bgSong.play()
 })
+
+let ballFired = false;
+let ballFired2 = false;
+let rightBall = 0;
+let leftBall = 0;
+let rightBall2 = 0;
+let leftBall2 = 0;
+let imgPlatform = new Image();
+
+
 imgPlatform.onload = function() {
     context.drawImage(imgPlatform, xPlatformLeft, yPlatformLeft, wPlatformLeft, hPlatformLeft);
     context.drawImage(imgPlatform, xPlatformRight, yPlatformRight, wPlatformRight, hPlatformRight);
@@ -42,13 +52,13 @@ imgPlatform.src = 'tilesets/bigIcePlatform.png'
 setInterval(  () => {
 let imgPlayer1 = new Image();
 imgPlayer1.onload = function() {
-  context.drawImage(imgPlayer1, 30, 50, 63, 58)
+  context.drawImage(imgPlayer1, 20, 20, 63, 58)
 }
 imgPlayer1.src = 'sprites/teteJonSnow.png'
 
 let imgPlayer2 = new Image();
 imgPlayer2.onload = function() {
-  context.drawImage(imgPlayer2, 1500, 50, 63, 58)
+  context.drawImage(imgPlayer2, 1520, 20, 63, 58)
 }
 imgPlayer2.src = 'sprites/teteCersei.png'
 },1
@@ -56,8 +66,8 @@ imgPlayer2.src = 'sprites/teteCersei.png'
 // PLAYER1
 
 context.fillStyle = "green"
-context.fillRect(50,20,400,30)
-context.fillRect(1150,20,400,30)
+context.fillRect(75,30,400,25)
+context.fillRect(1130,30,400,25)
 
 
 player1 = {
@@ -231,7 +241,7 @@ loopBall = function(){
     if ( fireBall1.xBall >= player2.x && fireBall1.xBall < player2.x+100 && fireBall1.yBall >= player2.y && fireBall1.yBall < player2.y+125 && fireBall1.dirBall == 'right' )  {
     //life of player 2 - 10
     player2.life = player2.life - 10
-    context.clearRect(1150+player2.life,50,400-player2.life,30)
+    context.clearRect(1130,0,400-player2.life,100)
     // pos of play2 + 10
     player2.xNew = player2.x + 10
     player2.x = player2.xNew
@@ -240,7 +250,7 @@ loopBall = function(){
 
   if ( fireBall1.xBall >= player2.x && fireBall1.xBall < player2.x+100 && fireBall1.yBall >= player2.y && fireBall1.yBall < player2.y+125 && fireBall1.dirBall == 'left'){
     player2.life = player2.life - 10
-    context.clearRect(1150+player2.life,50,400-player2.life,30)
+    context.clearRect(1130,0,400-player2.life,100)
     player2.xNew = player2.x - 10
     player2.x = player2.xNew
 
@@ -266,6 +276,7 @@ player2 = {
   x:1440, // center of the canvas
   y:375,
   xNew: 0,
+  xNew2 : 0,
   x_velocity:0,
   y_velocity:0,
   jumping:true,
@@ -273,8 +284,8 @@ player2 = {
   directionRight : true,
   power : false,
   dir: "left",
-  life : 1000,
-  Newlife : 0,
+  life : 400,
+  Newlife : -10,
 };
 let imageRight = new Image()
 imageRight.onload = function(){
@@ -389,6 +400,13 @@ loopPlayer2 = function() {
       context.drawImage(imgPlatform, xPlatformRight, yPlatformRight, wPlatformRight, hPlatformRight)
 
     }
+    // if (player1.y > 1000){
+    //   player1.life -= 20
+    //   context.clearRect(1150+player1.life,0,400-player1.life,100)
+    //   console.log('jb')
+    // }
+    // console.log(player1.y)
+    // console.log(player1.y_velocity)
 
   // call update when the browser is ready to draw again
   window.requestAnimationFrame(loopPlayer2);
@@ -399,7 +417,7 @@ fireBall2 = {
   xBall2_velocity: 50,
   yBall2 : 0,
   activBall : false,
-  dirBall2 : 'left'
+  dirBall2 : 'left',
 };
 
 let imageBall2 = new Image()
@@ -415,7 +433,7 @@ loopBall2 = function(){
        ballFired2 = true;
 
        if(player2.dir == "right"){
-         fireBall2.dirBall2 == 'right'
+         fireBall2.dirBall2 = 'right'
           fireBall2.yBall2 = player2.y
           fireBall2.xBall2 = player2.x
           rightBall2 = setInterval(rightDirBall2, 25)
@@ -427,25 +445,32 @@ loopBall2 = function(){
             leftBall2 = setInterval(leftDirBall2, 25)
     }
   }
+
+// ---------------- colllision --------------
+
     if (fireBall2.xBall2 >= player1.x && fireBall2.xBall2 < player1.x+100 && fireBall2.yBall2 >= player1.y && fireBall2.yBall2 < player1.y+125 && fireBall2.dirBall2 == 'left'){
       //life of player1 - 10
       player1.Newlife = player1.life - 10
+      context.clearRect(player1.life,0,400,100)
       player1.life =  player1.Newlife
-      context.clearRect(50,50,400-player1.life,30)
       // pos of play1 + 10
       player1.xNew = player1.x - 10
       player1.x = player1.xNew
       console.log("collision2")
+      console.log(player1.life)
+      console.log(player1.Newlife)
     }
 
-    if ( fireBall2.xBall2 >= player1.x && fireBall2.xBall2 < player1.x+100 && fireBall2.yBall2 >= player1.y && fireBall2.yBall2 < player1.y+125 && fireBall2.dirBall2 == 'right' ){
+    if ( fireBall2.xBall2 >= player1.x && fireBall2.xBall2 < player1.x+100 && fireBall2.yBall2 >= player1.y && fireBall2.yBall2 < player1.y+125 && fireBall2.dirBall2 == 'right'){
       player1.life = player1.life - 10
-      context.clearRect(1150+player1.life,50,400-player1.life,30)
+      context.clearRect(1150+player1.life,0,400-player1.life,100)
       player1.xNew = player1.x + 10
       player1.x = player1.xNew
       console.log("MArchhe2")
-
+      console.log(player1.x)
     }
+
+
    window.requestAnimationFrame(loopBall2);
 }
 
@@ -505,6 +530,8 @@ function rightDirBall2(){
          ballFired2 = false;
        }
 }
+
+
 
 
 
