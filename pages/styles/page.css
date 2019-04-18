@@ -180,12 +180,18 @@ header nav{
   font-family: 'lato';
 }
 
-.flexRowNowrap p{
-
+.text{
   font-weight: normal;
   width: 400px;
   margin-left: 200px;
   line-height: 1.6;
+}
+
+.charaParagraph{
+  font-weight: normal;
+  width: 400px;
+  line-height: 1.6;
+  margin-left: 20px;
 }
 
 .flexRowNowrap .map{
@@ -206,7 +212,7 @@ main .charaText h4{
 
 main .charaText h5{
   font-family: 'minecraft';
-  width: 170px;
+  width: 200px;
   letter-spacing: 1px;
 }
 
@@ -222,10 +228,6 @@ main .charaText h5{
 .charaPics{
   height: 150px;
   padding-right: 20px;
-}
-
-.daenerys p{
-  margin-left: 200px;
 }
 
 footer{
@@ -299,6 +301,7 @@ footer .button:hover{
 
 .groupPhoto{
   margin-left: 30px;
+  height: 200px;
 }
 
 .insideContainer{
