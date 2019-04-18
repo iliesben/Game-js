@@ -249,8 +249,6 @@ loopBall = function(){
 
   }
 
-
-  // console.log(fireBall1.xBall,)
    window.requestAnimationFrame(loopBall);
 }
 
@@ -393,13 +391,7 @@ loopPlayer2 = function() {
       context.drawImage(imgPlatform, xPlatformRight, yPlatformRight, wPlatformRight, hPlatformRight)
 
     }
-    // if (player1.y > 1000){
-    //   player1.life -= 20
-    //   context.clearRect(1150+player1.life,0,400-player1.life,100)
-    //   console.log('jb')
-    // }
-    // console.log(player1.y)
-    // console.log(player1.y_velocity)
+
 
   // call update when the browser is ready to draw again
   window.requestAnimationFrame(loopPlayer2);
@@ -450,17 +442,14 @@ loopBall2 = function(){
       player1.xNew = player1.x - 10
       player1.x = player1.xNew
       console.log("collision2")
-      console.log(player1.life)
-      console.log(player1.Newlife)
     }
 
     if ( fireBall2.xBall2 >= player1.x && fireBall2.xBall2 < player1.x+100 && fireBall2.yBall2 >= player1.y && fireBall2.yBall2 < player1.y+125 && fireBall2.dirBall2 == 'right'){
       player1.life = player1.life - 10
-      context.clearRect(1150+player1.life,0,400-player1.life,100)
+      context.clearRect(player1.life,0,400,100)
       player1.xNew = player1.x + 10
       player1.x = player1.xNew
-      console.log("MArchhe2")
-      console.log(player1.x)
+      console.log("collision4")
     }
 
 
@@ -468,8 +457,6 @@ loopBall2 = function(){
 }
 
      function rightDirBall(){
-
-     // fireBall1.activBall = true
 
      context.clearRect(fireBall1.xBall, fireBall1.yBall, 120,120)
      // x of ball take the velocity x of the ball
@@ -479,13 +466,6 @@ loopBall2 = function(){
 
      context.clearRect(fireBall1.xBall, player1.y, 0,80)
 
-
-     // if (controller1.attack && fireBall1.activBall == true) {
-     //     context.clearRect(fireBall1.xBall, fireBall1.yBall, 1800,1200)
-     //
-     // }
-
-     // if x of the ball > 1700 widht of canvas
 
      if (fireBall1.xBall > 1700){
        clearInterval(rightBall)
