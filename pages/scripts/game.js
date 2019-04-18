@@ -53,8 +53,8 @@ imgPlayer2.src = 'sprites/teteCersei.png'
 // PLAYER1
 
 context.fillStyle = "green"
-context.fillRect(50,100,400,30)
-context.fillRect(1150,100,400,30)
+context.fillRect(50,20,400,30)
+context.fillRect(1150,20,400,30)
 
 
 player1 = {
@@ -69,6 +69,7 @@ player1 = {
   power : false,
   dir: "right",
   life : 400,
+  Newlife : 0,
 };
 let imageLeft = new Image()
 imageLeft.onload = function(){
@@ -179,6 +180,9 @@ loopPlayer1 = function() {
       context.drawImage(imgPlatform, xPlatformRight, yPlatformRight, wPlatformRight, hPlatformRight);
 
     }
+    if (player1.y > 1000){
+
+    }
 
   // call update when the browser is ready to draw again
   window.requestAnimationFrame(loopPlayer1);
@@ -267,6 +271,7 @@ player2 = {
   power : false,
   dir: "left",
   life : 1000,
+  Newlife : 0,
 };
 let imageRight = new Image()
 imageRight.onload = function(){
@@ -421,7 +426,8 @@ loopBall2 = function(){
   }
     if (fireBall2.xBall2 >= player1.x && fireBall2.xBall2 < player1.x+100 && fireBall2.yBall2 >= player1.y && fireBall2.yBall2 < player1.y+125 && fireBall2.dirBall2 == 'left'){
       //life of player1 - 10
-      player1.life = player1.life - 10
+      player1.Newlife = player1.life - 10
+      player1.life =  player1.Newlife
       context.clearRect(50,50,400-player1.life,30)
       // pos of play1 + 10
       player1.xNew = player1.x - 10
