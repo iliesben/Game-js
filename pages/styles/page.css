@@ -45,11 +45,11 @@ body{
   font-size: 15px;
   margin: 0;
   overflow-X:hidden;
+  display: flex;
+  background-color: #111;
 }
 
 .page {
-	display: flex;
-	flex-direction: column;
 	min-height: 100vh;
 }
 
@@ -61,10 +61,9 @@ header nav{
 }
 
 .container{
-  width: 1000px;
+  width: 1100px;
   margin: 0 auto;
 }
-
 
 .category{
   flex-wrap: wrap;
@@ -89,7 +88,6 @@ nav a:hover{
 display: flex;
 flex-wrap: wrap;
 }
-
 
 .hero{
   display: flex;
@@ -126,23 +124,23 @@ flex-wrap: wrap;
 }
 
 .hero-inner{
-  margin-left: -500px;
+  margin-left: -600px;
   margin-top: 350px;
 }
 
 .parts{
-  margin-left: 0;
   background-color: #111;
   color: #FFF;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 
 .parts h3{
   font-family: "minecraft", serif;
   padding-left: 20px;
-  margin-left: 100px;
+  margin-left: 0;
   padding-bottom: 30px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -181,9 +179,10 @@ flex-wrap: wrap;
 }
 
 .chara{
-  margin-left: 180px;
   padding-top: 20px;
+  margin-left: 100px;
 }
+
 main .charaText h4{
   font-family: 'minecraft';
   letter-spacing: 1px;
@@ -261,7 +260,7 @@ footer .button:hover{
 
 #about p{
   width: 550px;
-  margin-left: 200px;
+  /*margin-left: 70px;*/
 }
 
 .copyright{
@@ -271,6 +270,7 @@ footer .button:hover{
 .player{
   display: flex;
   flex-flow: row nowrap;
+  /*margin-left: -130px;*/
 }
 
 .icon:hover{
@@ -279,4 +279,12 @@ footer .button:hover{
 
 .whoAreWe{
   width: 100px;
+}
+
+.groupPhoto{
+  margin-left: 30px;
+}
+
+.insideContainer{
+  margin-left: -100px;
 }
