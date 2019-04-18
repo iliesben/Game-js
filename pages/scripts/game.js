@@ -47,13 +47,13 @@ let imgPlayer1 = new Image();
 imgPlayer1.onload = function() {
   context.drawImage(imgPlayer1, 20, 20, 63, 58)
 }
-imgPlayer1.src = `sprites/head${headNumber}.png`
+imgPlayer1.src = `sprites/${player1.dir}head${player1.headNumber}.png`
 
 let imgPlayer2 = new Image();
 imgPlayer2.onload = function() {
   context.drawImage(imgPlayer2, 1520, 20, 63, 58)
 }
-imgPlayer2.src = `sprites/head${headNumber}.png`
+imgPlayer2.src = `sprites/${player1.dir}head${player1.headNumber}.png`
 },1
 )
 // PLAYER1
@@ -76,6 +76,7 @@ player1 = {
   dir: "right",
   life : 400,
   Newlife : 0,
+  headNumber : "1",
 };
 let imageLeft = new Image()
 imageLeft.onload = function(){
@@ -206,7 +207,7 @@ let imageBall1 = new Image()
 imageBall1.onload = function(){
 }
 imageBall1.src = fireBall1.dirBall
-imageBall1.src = `sprites/power${player1.chararcter}.png`
+imageBall1.src = `sprites/power${player1.character}.png`
 
 
 // function of attack
@@ -277,7 +278,8 @@ player2 = {
   dir: "left",
   life : 400,
   Newlife : -10,
-  character : "1",
+  character : "3",
+  headNumber : "3",
 };
 let imageRight = new Image()
 imageRight.onload = function(){
