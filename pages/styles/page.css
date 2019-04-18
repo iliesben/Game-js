@@ -76,10 +76,6 @@ a{
   text-decoration: none;
 }
 
-nav{
-  margin-left: 70px;
-}
-
 nav a:hover{
   color: #c0392b;
 }
@@ -90,10 +86,11 @@ flex-wrap: wrap;
 }
 
 .hero{
-  display: flex;
-  text-align: center;
   width: 100vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  /*text-align: center;*/
   background-image: url(../images/test.jpg);
   background-size: cover;
   background-position: center center;
@@ -101,7 +98,7 @@ flex-wrap: wrap;
 }
 .mainlogo{
   margin-top: -11px;
-  margin-left: 120px;
+  margin-left: -120px;
 }
 
 .button{
@@ -112,6 +109,7 @@ flex-wrap: wrap;
   border-radius: 3px;
   font-family: "minecraft", serif;
   text-transform: uppercase;
+  align-items: center;
 }
 
 .button:hover{
@@ -124,8 +122,16 @@ flex-wrap: wrap;
 }
 
 .hero-inner{
-  margin-left: -600px;
-  margin-top: 350px;
+  align-self: center;
+  justify-content: center;
+}
+
+nav{
+  margin-left: 450px;
+}
+
+.hero .button{
+  margin-left: -850px;
 }
 
 .parts{
