@@ -1,8 +1,156 @@
+
+//// MENU OF THE GAME /////
+
+let continueToMaps = document.querySelector(".continueToMaps")
+let jonSnow = document.querySelector("div.jonSnow")
+let daenerys = document.querySelector("div.daenerys")
+let cersei = document.querySelector("div.cersei")
+let mainMenu = document.querySelector(".mainMenu")
+let characters = document.querySelector(".charactersMenu")
+let mapsMenu = document.querySelector(".mapsMenu")
+let pausedMenu= document.querySelector(".pausedMenu")
+let castle = document.querySelector(".castle img")
+let desert = document.querySelector(".desert img")
+let neige = document.querySelector(".ice img")
+let canvas =  document.querySelector("canvas")
+
+mainMenu.addEventListener('click', selectionCharacters)
+function selectionCharacters() {
+  characters.style.display='block'
+}
+
+// player1.addEventListener('click', characters1)
+// if (player1.character){
+//   function characters1() {
+//   jonSnow.style.display='block'
+// }
+// }
+
+let clickJonSnow = 0
+jonSnow.addEventListener('click', function(){
+  clickJonSnow++
+  console.log(clickJonSnow)
+}
+)
+
+let clickCersei = 0
+cersei.addEventListener('click', function(){
+  clickCersei++
+  console.log(clickCersei)
+}
+)
+
+let clickDaenerys = 0
+daenerys.addEventListener('click', function(){
+  clickDaenerys++
+  console.log(clickDaenerys)
+}
+)
+
+jonSnow.addEventListener('click', charactersJonSnow)
+    function charactersJonSnow() {
+    if(clickJonSnow < 3){
+      if (clickJonSnow == 1) {
+        player1.character = "1"
+        jonSnow.style.borderColor='red'
+        clickCersei++
+        clickDaenerys ++
+        clickJonSnow++
+        // clickCersei++
+        // clickDaenerys ++
+        clickJonSnow++
+        console.log(player1.character)
+        console.log(clickJonSnow)
+      }
+      else if (clickJonSnow == 2){
+        jonSnow.style.borderColor='blue'
+        clickCersei++
+        clickDaenerys ++
+        clickJonSnow++
+        clickJonSnow++
+        player2.character = "1"
+        console.log(player2.character)
+      }
+    }
+}
+cersei.addEventListener('click', charactersCersei, false)
+function charactersCersei() {
+    if(clickCersei < 3){
+      if (clickCersei == 1) {
+      player1.character = "3"
+      cersei.style.borderColor='red'
+      clickCersei++
+      clickDaenerys ++
+      clickJonSnow++
+      clickCersei++
+      console.log(player1.character)
+    }
+      else if (clickCersei == 2 ){
+      player2.character = "3"
+      cersei.style.borderColor='blue'
+      clickCersei++
+      clickDaenerys ++
+      clickJonSnow++
+      clickCersei++
+    }
+  }
+}
+daenerys.addEventListener('click', charactersDaenerys)
+function charactersDaenerys() {
+      if ( clickDaenerys < 3 ) {
+        if(clickDaenerys == 1){
+          player1.character = "2"
+          daenerys.style.borderColor='red'
+          clickCersei++
+          clickDaenerys ++
+          clickJonSnow++
+          console.log(player1.character)
+          clickDaenerys ++
+        }
+        else if (clickDaenerys == 2 ){
+          player2.character = "2"
+          daenerys.style.borderColor='blue'
+          clickCersei++
+          clickDaenerys ++
+          clickJonSnow++
+          clickDaenerys ++
+      }
+  }
+}
+
+
+    continueToMaps.style.display='block'
+
+
+
+ continueToMaps.addEventListener('click', toMaps)
+  function toMaps() {
+    mapsMenu.style.display='block'
+ }
+
+castle.addEventListener('click', game)
+desert.addEventListener('click', game)
+neige.addEventListener('click', game)
+
+function game() {
+  canvas.style.display='block'
+}
+
+
+
+
+
+
+
+
+
+
+
+
 let context, controller1, player1, loopPlayer1
 
+
 context = document.querySelector("canvas").getContext("2d");
-
-
 context.canvas.width = 1600;
 context.canvas.height = 1000;
 
@@ -79,6 +227,7 @@ player1 = {
   headNumber : "1",
   character: "1",
 };
+
 let imageLeft = new Image()
 imageLeft.onload = function(){
 context.drawImage(imageLeft, player1.x, player1.y)

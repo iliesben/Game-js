@@ -8,14 +8,313 @@ font-style: normal;
 body{
   background-color: #2C2B2B;
 }
-#canvas{
+/* #canvas{
   position: absolute;
   top: 20px;
   left : 120px;
   width: 1200px;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%)
+} */
+canvas{
+  position: absolute;
+  top : 0;
+  left : 0;
+  width: 1200px;
+  z-index: 4;
+  display: none;
 }
+
+div.allGamme{
+  position: relative;
+  top: 20px;
+  left: 120px;
+  width: 1200px;
+  /* height: auto; */
+}
+
+
+
+div.mainMenu{
+  top: 0;
+  left:0;
+  z-index: 0;
+  position: absolute;
+  width: 1200px;
+  height: 750px;
+  /* background: url("litesets/mainMenu.png") */
+}
+
+div.charactersMenu{
+  position : absolute;
+  top: 0;
+  left:0;
+  width: 1200px;
+  z-index: 1;
+  height: 750px;
+  display: none;
+}
+
+div.mapsMenu{
+  position : absolute;
+  top: 0;
+  left:0;
+  width : 1200px;
+  z-index: 2;
+  background: url("../tilesets/gifMap.gif");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  height : 750px;
+  display: none;
+}
+ div.pausedMenu{
+  position : absolute;
+  top: 0;
+  left:0;
+  width : 1200px;
+  height: 750px;
+  z-index: 3;
+  background-color: #222;
+  background-image: linear-gradient(#bd1717, #111);
+  display: none;
+}
+
+
+
+/*
+PAUSE MENU STYLE AND FORM
+*/
+
+.zoom .replay{
+  position: absolute;
+  top: 550px;
+  left: 150px;
+  background-color:transparent;
+  width : 200px;
+  height : 80px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  border-left: 0px;
+  border-right: 0px;
+  font-size: 30px;
+  color: white;
+  font-family: 'minecraft';
+  transition: transform .2s; /* Animation */
+}
+
+.zoom .principalMenu{
+  position: absolute;
+  top: 550px;
+  left: 500px;
+  background-color:transparent;
+  width : 200px;
+  height : 80px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  border-left: 0px;
+  border-right: 0px;
+  font-size: 30px;
+  color: white;
+  font-family: 'minecraft';
+  transition: transform .2s; /* Animation */
+}
+
+.zoom .characters{
+  position: absolute;
+  top: 550px;
+  left: 850px;
+  background-color:transparent;
+  width : 200px;
+  height : 80px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  border-left: 0px;
+  border-right: 0px;
+  font-size: 30px;
+  color: white;
+  font-family: 'minecraft';
+  transition: transform .2s; /* Animation */
+}
+
+.zoom .replay:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.zoom .characters:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.zoom .principalMenu:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/*
+SETTINGS MENU STYLE AND FORM
+*/
+
+
+.maps{
+  position: absolute;
+  left: 30px;
+  top: 330px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+}
+
+/* Noir et blanc */
+ .maps div img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.maps div:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+
+.maps .ice img{
+  width : 350px;
+  height: auto;
+  margin-left: 15px;
+  margin-right: 15px
+}
+
+.maps .desert img{
+  width : 350px;
+  height: auto;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.maps .castle img{
+  width : 350px;
+  height: auto;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+div.chooseYourMap{
+  margin: 0 auto;
+  height: 200px;
+  margin-top: 200px;
+}
+
+ div.chooseYourMap p{
+  text-align: center;
+  color: #2F4F4F;
+  font-size: 50px;
+  font-family: 'minecraft';
+}
+
+
+/*
+CHARACTER CHOICE MENU
+*/
+
+.charactersWall{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1200px;
+  height: 750px;
+}
+.characters img{
+  top: -50px;
+  left : -120px;
+  position: absolute;
+  width : 1500px;
+  height : auto;
+}
+
+div.jonSnow{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border: 2px solid transparent;
+  background: transparent;
+  top: 469px;
+  left: 509px;
+}
+
+div.daenerys{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border: 2px solid transparent;
+  background: transparent;
+  top: 328px;
+  left: 654px;
+}
+
+div.cersei{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border: 2px solid transparent;
+  background: transparent;
+  top: 328px;
+  left: 509px;
+}
+
+.chooseYourcharacter{
+  position: absolute;
+  color: white;
+  top: 85px;
+  left: 350px;
+  font-size: 50px;
+  font-family: 'minecraft';
+  color: #2F4F4F;
+}
+
+.continueToMaps{
+  height: 30px;
+  position: absolute;
+  top: 600px;
+  left: 525px;
+  font-size: 50px;
+  font-family: 'minecraft';
+  color: #B22222;
+  padding: 10px;
+  display: none;
+}
+
+
+/*
+MAIN menu
+*/
+
+/*  MAIN MENU && mainMenuWall && play  */
+
+.mainMenuWall img{
+  width: 1200px;
+  height: 750px;
+}
+
+div.play button{
+  position: absolute;
+  background-color:transparent;
+  width : 200px;
+  height : 100px;
+  top :600px;
+  left : 500px;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  border-left: 0px;
+  border-right: 0px;
+  font-size: 50px;
+  color: white;
+  font-family: 'minecraft';
+  transition: transform .2s; /* Animation */
+}
+
+.play button:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
 
 h2{
 color: #FFF;
@@ -41,4 +340,8 @@ a{
 
 a:hover{
   color:#C82A2A;
+}
+
+video{
+  display: none;
 }

@@ -7,6 +7,46 @@
   </head>
   <body>
     <h2>The final fight</h2>
+    <div class="allGamme">
+    <div class="mainMenu">
+       <div class="mainMenuWall">
+         <img src="tilesets/mainMenu.png" alt="mainMenu">
+       </div>
+       <div class="play">
+         <button class="playButton" type="button" name="button">Play</button>
+       </div>
+    </div>
+    <div class="charactersMenu">
+      <img class="charactersWall" src="tilesets/charactersWall.png" alt="charactersWall">
+         <div class="characters">
+             <img src="tilesets/charactersChoice.png" alt="charactersChoice">
+             <div class="jonSnow"></div>
+             <div class="daenerys"></div>
+             <div class="cersei"></div>
+         </div>
+         <div class="chooseYourcharacter">
+           <p>Choose your character</p>
+         </div>
+         <div class="continueToMaps">
+           <p>Continue</p>
+         </div>
+    </div>
+    <div class="mapsMenu">
+         <div class="maps">
+             <div class="ice" class="image">
+               <img src="tilesets/murneige.png" alt="iceWall">
+             </div>
+             <div class="desert" class="image">
+               <img src="tilesets/mursable.png" alt="desertPlain">
+             </div>
+             <div class="castle" class="image">
+               <img src="tilesets/murnature.png" alt="kingsCastle">
+             </div>
+         </div>
+         <<div class="chooseYourMap">
+           <p>Choose your map</p>
+         </div>
+    </div>
     <canvas id="canvas" width="1600" height="1000" style="background: url(tilesets/iceBackground.png) no-repeat center center;
     border:3px solid #000000;">Votre navigateur ne supporte pas HTML5, veuillez le mettre à jour pour jouer.</canvas>
     <video id=v controls loop>
@@ -16,7 +56,19 @@
       <source class="jonSnowDeath" src="videos/jonSnowDeath.mp4" type=video/mp4>
       <source class="daenerysDeath" src="videos/daenerysDeath.mp4" type=video/mp4>
     </video>
-    <a href="../index.html"> Retour sur la page d'accueil </a>
+    <div class="pausedMenu">
+       <div class="zoom">
+         <button class="principalMenu" type="button" name="button">Main menu</button>
+       </div>
+       <div class="zoom">
+          <button class="replay" type="button" name="button">Replay</button>
+       </div>
+       <div class="zoom">
+          <button class="characters" type="button" name="button">Characters</button>
+       </div>
+     </div>
+  </div>
+  <a href="./index.html"> Retour sur la page d'accueil </a>
   <script src="scripts/game.js"></script>
   </body>
 </html>
