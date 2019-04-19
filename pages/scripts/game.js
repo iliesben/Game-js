@@ -52,6 +52,7 @@ jonSnow.addEventListener('click', charactersJonSnow)
     if(clickJonSnow < 3){
       if (clickJonSnow == 1) {
         player1.character = "1"
+        player1.headNumber = "1"
         jonSnow.style.borderColor='red'
         clickCersei++
         clickDaenerys ++
@@ -69,6 +70,7 @@ jonSnow.addEventListener('click', charactersJonSnow)
         clickJonSnow++
         clickJonSnow++
         player2.character = "1"
+        player2.headNumber = "1"
         console.log(player2.character)
       }
     }
@@ -78,6 +80,7 @@ function charactersCersei() {
     if(clickCersei < 3){
       if (clickCersei == 1) {
       player1.character = "3"
+      player1.headNumber = "3"
       cersei.style.borderColor='red'
       clickCersei++
       clickDaenerys ++
@@ -87,6 +90,7 @@ function charactersCersei() {
     }
       else if (clickCersei == 2 ){
       player2.character = "3"
+      player2.headNumber = "3"
       cersei.style.borderColor='blue'
       clickCersei++
       clickDaenerys ++
@@ -100,6 +104,7 @@ function charactersDaenerys() {
       if ( clickDaenerys < 3 ) {
         if(clickDaenerys == 1){
           player1.character = "2"
+          player1.headNumber = "2"
           daenerys.style.borderColor='red'
           clickCersei++
           clickDaenerys ++
@@ -109,6 +114,7 @@ function charactersDaenerys() {
         }
         else if (clickDaenerys == 2 ){
           player2.character = "2"
+          player2.headNumber = "2"
           daenerys.style.borderColor='blue'
           clickCersei++
           clickDaenerys ++
@@ -135,15 +141,6 @@ neige.addEventListener('click', game)
 function game() {
   canvas.style.display='block'
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -188,12 +185,8 @@ imgPlatform.onload = function() {
     context.drawImage(imgPlatform, xPlatformMiddle, yPlatformMiddle, wPlatformMiddle, hPlatformMiddle);
 }
 
-let selection {
-  map : "ice",
-}
+imgPlatform.src = 'tilesets/icePlatform.png'
 
-
-imgPlatform.src = `tilesets/${map}Platform.png`
 
 setInterval(  () => {
 let imgPlayer1 = new Image();
@@ -209,6 +202,7 @@ imgPlayer2.onload = function() {
 imgPlayer2.src = `sprites/${player2.dir}head${player2.headNumber}.png`
 },1
 )
+
 // PLAYER1
 
 context.fillStyle = "green"
@@ -229,8 +223,8 @@ player1 = {
   dir: "right",
   life : 400,
   Newlife : 0,
-  headNumber : "1",
   character: "1",
+  headNumber: "0"
 };
 
 let imageLeft = new Image()
@@ -439,7 +433,7 @@ player2 = {
   life : 400,
   Newlife : -10,
   character : "3",
-  headNumber : "3",
+  headNumber : "0",
 };
 let imageRight = new Image()
 imageRight.onload = function(){
@@ -559,6 +553,8 @@ loopPlayer2 = function() {
   // call update when the browser is ready to draw again
   window.requestAnimationFrame(loopPlayer2);
 }
+
+
 
 fireBall2 = {
   xBall2: player2.x+100,
