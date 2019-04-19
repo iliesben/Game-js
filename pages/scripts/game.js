@@ -188,7 +188,12 @@ imgPlatform.onload = function() {
     context.drawImage(imgPlatform, xPlatformMiddle, yPlatformMiddle, wPlatformMiddle, hPlatformMiddle);
 }
 
-imgPlatform.src = 'tilesets/icePlatform.png'
+let selection {
+  map : "ice",
+}
+
+
+imgPlatform.src = `tilesets/${map}Platform.png`
 
 setInterval(  () => {
 let imgPlayer1 = new Image();
