@@ -347,7 +347,7 @@ fireBall1 = {
   xBall_velocity: 50, // velocity of balle
   yBall : 0, // y ball
   activBall : false, // bal activation
-  dirBall : 'left' // direction of blle
+  dirBall : 'left', // direction of blle
 };
 
 let imageBall1 = new Image()
