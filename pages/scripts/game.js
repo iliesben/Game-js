@@ -188,9 +188,6 @@ loopPlayer1 = function() {
       context.drawImage(imgPlatform, xPlatformRight, yPlatformRight, wPlatformRight, hPlatformRight);
 
     }
-    if (player1.y > 1000){
-
-    }
 
   // call update when the browser is ready to draw again
   window.requestAnimationFrame(loopPlayer1);
@@ -249,6 +246,14 @@ loopBall = function(){
     player2.xNew = player2.x - 10
     player2.x = player2.xNew
 
+  }
+
+  if ( player1.y > 1000){
+    player1.life = player1.life - 400
+    context.clearRect(78,0,398,100)
+    imgPlayer1.onload = function() {
+      context.drawImage(imgPlayer1, 20, 20, 63, 58)
+    }
   }
 
    window.requestAnimationFrame(loopBall);
@@ -456,6 +461,10 @@ loopBall2 = function(){
       console.log("collision4")
     }
 
+    if ( player2.y > 1000){
+      player2.life = player2.life - 400
+      context.clearRect(1130,0,392,100)
+    }
 
    window.requestAnimationFrame(loopBall2);
 }
@@ -470,11 +479,6 @@ loopBall2 = function(){
 
      context.clearRect(fireBall1.xBall, player1.y, 0,80)
 
-
-     if (fireBall1.xBall > 1700){
-       clearInterval(rightBall)
-       ballFired = false;
-     }
  }
 
  function leftDirBall(){
@@ -507,8 +511,6 @@ function rightDirBall2(){
          ballFired2 = false;
        }
 }
-
-
 
 
 
