@@ -26,6 +26,7 @@ function selectionCharacters() {
 // }
 // }
 
+
 let clickJonSnow = 0
 jonSnow.addEventListener('click', function(){
   clickJonSnow++
@@ -134,8 +135,7 @@ function charactersDaenerys() {
     mapsMenu.style.display='block'
  }
 
-castle.addEventListener('click', game)
-desert.addEventListener('click', game)
+
 neige.addEventListener('click', game)
 
 function game() {

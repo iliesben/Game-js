@@ -162,6 +162,29 @@ SETTINGS MENU STYLE AND FORM
   align-content: center;
 }
 
+
+p.soon1{
+  margin-top: 240px;
+  margin-left: 150px;
+  position: absolute;
+  width : 200px;
+  height : 40px;
+  color: red;
+  font-size: 30px;
+  font-family: 'minecraft';
+}
+
+p.soon2{
+  margin-top: 240px;
+  margin-left: 150px;
+  position: absolute;
+  width : 200px;
+  height : 40px;
+  color: red;
+  font-size: 30px;
+  font-family: 'minecraft';
+}
+
 /* Noir et blanc */
  .maps div img {
 	-webkit-filter: grayscale(100%);
@@ -169,7 +192,7 @@ SETTINGS MENU STYLE AND FORM
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
-.maps div:hover img {
+.maps div.ice:hover img {
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
 }
