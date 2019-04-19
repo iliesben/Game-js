@@ -88,7 +88,7 @@ header{
 
 header nav{
   font-family: "minecraft", serif;
-  font-size: 13px;
+  font-size: 15px;
   display: flex;
   letter-spacing: 2px;
   width: 1000px;
@@ -140,6 +140,7 @@ header nav{
   top: 450px;
   left: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 30px;
 }
 
 .button:hover{
