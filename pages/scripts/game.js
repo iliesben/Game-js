@@ -40,7 +40,7 @@ imgPlatform.onload = function() {
     context.drawImage(imgPlatform, xPlatformMiddle, yPlatformMiddle, wPlatformMiddle, hPlatformMiddle);
 }
 
-imgPlatform.src = `tilesets/${map}Platform.png`
+imgPlatform.src = 'tilesets/icePlatform.png'
 
 setInterval(  () => {
 let imgPlayer1 = new Image();
@@ -53,7 +53,7 @@ let imgPlayer2 = new Image();
 imgPlayer2.onload = function() {
   context.drawImage(imgPlayer2, 1520, 20, 63, 58)
 }
-imgPlayer2.src = `sprites/${player1.dir}head${player1.headNumber}.png`
+imgPlayer2.src = `sprites/${player2.dir}head${player2.headNumber}.png`
 },1
 )
 // PLAYER1
@@ -77,6 +77,7 @@ player1 = {
   life : 400,
   Newlife : 0,
   headNumber : "1",
+  character: "1",
 };
 let imageLeft = new Image()
 imageLeft.onload = function(){
