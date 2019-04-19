@@ -624,11 +624,12 @@ loopBall2 = function(){
      context.clearRect(fireBall1.xBall, fireBall1.yBall, 120,120)
      // x of ball take the velocity x of the ball
      fireBall1.xBall += fireBall1.xBall_velocity
-
      context.drawImage(imageBall1, fireBall1.xBall, fireBall1.yBall)
-
      context.clearRect(fireBall1.xBall, player1.y, 0,80)
-
+     if (fireBall1.xBall > 1700){
+       clearInterval(rightBall)
+       ballFired = false;
+     }
  }
 
  function leftDirBall(){
