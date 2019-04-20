@@ -365,6 +365,75 @@ a:hover{
   color:#C82A2A;
 }
 
-video{
+/* video{
   display: none;
+} */
+
+
+.videodaenerysWin{
+  position: absolute;
+  /* display: none; */
+  visibility: hidden;
+  width : 1200px;
+  height: 750px;
+  top: -20px;
+  left: 0;
+}
+
+.videojonSnowWin{
+  position: absolute;
+  /* display: none; */
+  visibility: hidden;
+  width : 1200px;
+  height: 750px;
+  top: -20px;
+  left: 0;
+}
+
+.videocirseiWin{
+  position: absolute;
+  visibility: hidden;
+  width : 1200px;
+  height: 750px;
+  top: -20px;
+  left: 0;
+}
+
+.videojonSnowDeath{
+  position: absolute;
+  visibility: hidden;
+  width : 1200px;
+  height: 750px;
+  top: -20px;
+  left: 0;
+}
+
+.videodaenerysDeath{
+  position: absolute;
+  visibility: hidden;
+  width : 1200px;
+  height: 750px;
+  top: -20px;
+  left: 0;
+}
+
+#videojonSnowWin{
+  width : 1200px;
+  height: 750px;
+}
+#videodaenerysWin{
+  width : 1200px;
+  height: 750px;
+}
+#videocirseiWin{
+  width : 1200px;
+  height: 750px;
+}
+#videojonSnowDeath{
+  width : 1200px;
+  height: 750px;
+}
+#videodaenerysDeath{
+  width : 1200px;
+  height: 750px;
 }

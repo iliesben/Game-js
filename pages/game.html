@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="styles/game.css" />
   </head>
   <body>
-    <h2>Final battle</h2>
+    <h2>The final fight</h2>
     <div class="allGamme">
     <div class="mainMenu">
        <div class="mainMenuWall">
@@ -37,21 +37,40 @@
                <img src="tilesets/murneige.png" alt="iceWall">
              </div>
              <div class="desert" class="image">
+               <p class="soon1">SOON</p>
                <img src="tilesets/mursable.png" alt="desertPlain">
              </div>
              <div class="castle" class="image">
+               <p class="soon2">SOON</p>
                <img src="tilesets/murnature.png" alt="kingsCastle">
              </div>
          </div>
-         <div class="chooseYourMap">
+         <<div class="chooseYourMap">
            <p>Choose your map</p>
-         </div>
-         <div class="playGame">
-           <p>Play</p>
          </div>
     </div>
     <canvas id="canvas" width="1600" height="1000" style="background: url(tilesets/iceBackground.png) no-repeat center center;
     border:3px solid #000000;">Votre navigateur ne supporte pas HTML5, veuillez le mettre à jour pour jouer.</canvas>
+    <div class="videodaenerysWin">
+     <video id=videodaenerysWin controls loop src="videos/daenerysWin.mp4" type=video/mp4>
+     </video>
+     </div>
+   <div class="videojonSnowWin">
+     <video id=videojonSnowWin controls loop src="videos/jonSnowWin.mp4" type=video/mp4>
+     </video>
+   </div>
+     <div class="videocirseiWin">
+     <video id=videocirseiWin  controls loop src="videos/cirseiWin.mp4" type=video/mp4>
+     </video>
+   </div>
+   <!-- <div class="videojonSnowDeath">
+     <video id=videojonSnowDeath  controls loop src="videos/jonSnowDeath.mp4" type=video/mp4>
+     </video>
+   </div> -->
+   <!-- <div class="videodaenerysDeath">
+     <video id=videodaenerysDeath  controls loop src="videos/daenerysDeath.mp4" type=video/mp4>
+     </video>
+    </div> -->
     <div class="pausedMenu">
        <div class="zoom">
          <button class="principalMenu" type="button" name="button">Main menu</button>
@@ -64,32 +83,7 @@
        </div>
      </div>
   </div>
-  <div class="videodaenerysWin">
-    <video id=videodaenerysWin controls loop>
-    <source class="daenerysWin" src="videos/daenerysWin.mp4" type=video/mp4>
-    </video>
-  </div>
-  <div class="videojonSnowWin">
-    <video id=videojonSnowWin controls loop>
-    <source src="videos/jonSnowWin.mp4" type=video/mp4>
-    </video>
-  </div>
-  <div class="videocirseiWin">
-    <video id=videocirseiWin controls loop>
-    <source class="cirseiWin" src="videos/cirseiWin.mp4" type=video/mp4>
-    </video>
-  </div>
-  <div class="videojonSnowDeath">
-    <video id=videojonSnowDeath controls loop>
-    <source class="jonSnowDeath" src="videos/jonSnowDeath.mp4" type=video/mp4>
-    </video>
-  </div>
-  <div class="videodaenerysDeath">
-    <video id=videodaenerysDeath controls loop>
-    <source class="daenerysDeath" src="videos/daenerysDeath.mp4" type=video/mp4>
-    </video>
-  </div>
-  <a href="./index.html"> Retour sur la page d'accueil </a>
+  <a href="../index.html"> Retour sur la page d'accueil </a>
   <script src="scripts/game.js"></script>
   </body>
 </html>
