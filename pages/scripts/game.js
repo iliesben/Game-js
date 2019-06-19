@@ -26,6 +26,7 @@ function selectionCharacters() {
 // }
 // }
 
+
 let clickJonSnow = 0
 jonSnow.addEventListener('click', function(){
   clickJonSnow++
@@ -134,15 +135,23 @@ function charactersDaenerys() {
     mapsMenu.style.display='block'
  }
 
-castle.addEventListener('click', game)
-desert.addEventListener('click', game)
+
 neige.addEventListener('click', game)
 
 function game() {
   canvas.style.display='block'
 }
 
+// endGame //
 
+let video = document.querySelector('.video')
+let jonSnowWin = document.querySelector(".videojonSnowWin")
+let daenerysWin = document.querySelector(".videodaenerysWin")
+let cirseiWin = document.querySelector(".videocirseiWin")
+// let jonSnowDeath = document.querySelector(".videojonSnowDeath")
+// let daenerysDeath = document.querySelector(".videodaenerysDeath")
+
+///// GamePlay ////
 
 let context, controller1, player1, loopPlayer1
 
@@ -403,6 +412,57 @@ loopBall = function(){
       context.drawImage(imgPlayer1, 20, 20, 63, 58)
     }
   }
+  if (player2.life <= 0 && player2.character == "1"){
+    console.log(player2.Newlife)
+    console.log("video")
+    canvas.style.display="none"
+    continueToMaps.style.display="none"
+    jonSnow.style.display="none"
+    daenerys.style.display="none"
+    cersei.style.display="none"
+    characters.style.display="none"
+    mapsMenu.style.display="none"
+    pausedMenu.style.display="none"
+    castle.style.display="none"
+    desert.style.display="none"
+    neige.style.display="none"
+    canvas.style.display="none"
+    jonSnowWin.style.visibility="visible"
+ }
+ if (player2.life <= 0 && player2.character == "2"){
+   console.log(player2.Newlife)
+   console.log("video")
+   canvas.style.display="none"
+   continueToMaps.style.display="none"
+   jonSnow.style.display="none"
+   daenerys.style.display="none"
+   cersei.style.display="none"
+   characters.style.display="none"
+   mapsMenu.style.display="none"
+   pausedMenu.style.display="none"
+   castle.style.display="none"
+   desert.style.display="none"
+   neige.style.display="none"
+   canvas.style.display="none"
+   daenerysWin.style.visibility="visible"
+}
+if (player2.life <= 0 && player2.character == "3"){
+  console.log(player2.Newlife)
+  console.log("video")
+  canvas.style.display="none"
+  continueToMaps.style.display="none"
+  jonSnow.style.display="none"
+  daenerys.style.display="none"
+  cersei.style.display="none"
+  characters.style.display="none"
+  mapsMenu.style.display="none"
+  pausedMenu.style.display="none"
+  castle.style.display="none"
+  desert.style.display="none"
+  neige.style.display="none"
+  canvas.style.display="none"
+  cirseiWin.style.visibility="visible"
+}
 
    window.requestAnimationFrame(loopBall);
 }
@@ -615,6 +675,57 @@ loopBall2 = function(){
       player2.life = player2.life - 400
       context.clearRect(1130,0,392,100)
     }
+    if (player1.life <= 0 && player2.character == "1"){
+      console.log(player1.Newlife)
+      console.log("video")
+      canvas.style.display="none"
+      continueToMaps.style.display="none"
+      jonSnow.style.display="none"
+      daenerys.style.display="none"
+      cersei.style.display="none"
+      characters.style.display="none"
+      mapsMenu.style.display="none"
+      pausedMenu.style.display="none"
+      castle.style.display="none"
+      desert.style.display="none"
+      neige.style.display="none"
+      canvas.style.display="none"
+      jonSnowWin.style.visibility="visible"
+   }
+   if (player1.life <= 0 && player2.character == "2"){
+     console.log(player1.Newlife)
+     console.log("video")
+     canvas.style.display="none"
+     continueToMaps.style.display="none"
+     jonSnow.style.display="none"
+     daenerys.style.display="none"
+     cersei.style.display="none"
+     characters.style.display="none"
+     mapsMenu.style.display="none"
+     pausedMenu.style.display="none"
+     castle.style.display="none"
+     desert.style.display="none"
+     neige.style.display="none"
+     canvas.style.display="none"
+     daenerysWin.style.visibility="visible"
+  }
+  if (player1.life <= 0 && player2.character == "3"){
+    console.log(player1.Newlife)
+    console.log("video")
+    canvas.style.display="none"
+    continueToMaps.style.display="none"
+    jonSnow.style.display="none"
+    daenerys.style.display="none"
+    cersei.style.display="none"
+    characters.style.display="none"
+    mapsMenu.style.display="none"
+    pausedMenu.style.display="none"
+    castle.style.display="none"
+    desert.style.display="none"
+    neige.style.display="none"
+    canvas.style.display="none"
+    cirseiWin.style.visibility="visible"
+ }
 
    window.requestAnimationFrame(loopBall2);
 }
